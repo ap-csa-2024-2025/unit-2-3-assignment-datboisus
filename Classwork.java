@@ -2,9 +2,16 @@ public class Classwork
 {
   public static void main(String[] args)
   {
-    // test your code here
+    System.out.println(firstLastN("con cac", 1));
   }
+  public static String firstLastN(String word, int n)
+  {
+    String output = new String();
+    String firstN = word.substring (0,n);
+    int indexOfNthToLast = word.length() - n;
+    String lastN = word.substring(indexOfNthToLast);
 
-  // write solutions to problems below
-
+    output = firstN + lastN;
+    return output;
+  }
 }
